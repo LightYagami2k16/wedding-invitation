@@ -11,23 +11,7 @@ const WEDDING_DATE = new Date('2026-02-14T16:00:00');
 const SONGS = [
   {
     title: 'A Thousand Years',
-    url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'
-  },
-  {
-    title: 'Canon in D',
-    url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3'
-  },
-  {
-    title: 'Perfect — Instrumental',
-    url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3'
-  },
-  {
-    title: 'All of Me — Instrumental',
-    url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3'
-  },
-  {
-    title: 'Marry You — Instrumental',
-    url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3'
+    url: 'https://www.image2url.com/r2/default/audio/1782450469981-f0c6de59-b6ae-4b70-ac07-c9d3cf9e75c1.mp3'
   }
 ];
 
