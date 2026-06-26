@@ -3,7 +3,7 @@
    ══════════════════════════════════════════ */
 
 // ── WEDDING DATE ──────────────────────────
-const WEDDING_DATE = new Date('2026-02-14T16:00:00');
+const WEDDING_DATE = new Date('2026-06-30T16:00:00');
 
 // ── MUSIC ────────────────────────────────
 // Using royalty-free instrumental pieces via public CDN.
