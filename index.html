@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sarah & James — Wedding Invitation</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── MUSIC PLAYER ── -->
+  <div id="music-player">
+    <button id="music-btn" onclick="toggleMusic()" title="Toggle Music">
+      <svg id="icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+      <svg id="icon-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+    </button>
+    <span id="song-title">♪ Loading…</span>
+  </div>
+  <audio id="wedding-audio" loop></audio>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="eyebrow">Together with their families</p>
+      <h1 class="names">Sarah <span class="amp">&</span> James</h1>
+      <p class="invite-line">invite you to celebrate their marriage</p>
+      <div class="date-badge">
+        <span class="day">Saturday</span>
+        <span class="date-num">14 February 2026</span>
+        <span class="time">Four o'clock in the afternoon</span>
+      </div>
+      <div class="scroll-hint">↓ Scroll to explore</div>
+    </div>
+  </section>
+
+  <!-- ── COUNTDOWN ── -->
+  <section id="countdown-section">
+    <p class="section-eyebrow">Counting the days</p>
+    <h2 class="section-title">Until We Say <em>I Do</em></h2>
+    <div id="countdown">
+      <div class="cd-block"><span id="cd-days">00</span><label>Days</label></div>
+      <div class="cd-sep">:</div>
+      <div class="cd-block"><span id="cd-hours">00</span><label>Hours</label></div>
+      <div class="cd-sep">:</div>
+      <div class="cd-block"><span id="cd-mins">00</span><label>Minutes</label></div>
+      <div class="cd-sep">:</div>
+      <div class="cd-block"><span id="cd-secs">00</span><label>Seconds</label></div>
+    </div>
+  </section>
+
+  <!-- ── EVENT DETAILS ── -->
+  <section id="details">
+    <div class="details-grid">
+      <div class="detail-card">
+        <div class="detail-icon">💒</div>
+        <h3>Ceremony</h3>
+        <p>St. Michael's Cathedral<br/>123 Cathedral Avenue<br/>New York, NY 10001</p>
+        <p class="detail-time">4:00 PM</p>
+      </div>
+      <div class="detail-card motif-card">
+        <div class="detail-icon">🌸</div>
+        <h3>Wedding Motif</h3>
+        <div class="motif-swatches">
+          <span class="swatch" style="background:#C9A96E;" title="Champagne Gold"></span>
+          <span class="swatch" style="background:#E8D5C4;" title="Blush Rose"></span>
+          <span class="swatch" style="background:#F5F0EB;" title="Ivory Cream"></span>
+          <span class="swatch" style="background:#7B6E64;" title="Warm Taupe"></span>
+        </div>
+        <p class="motif-names">Champagne Gold · Blush Rose · Ivory · Warm Taupe</p>
+        <p class="motif-dress">Garden Romantic — Semi-Formal Attire</p>
+      </div>
+      <div class="detail-card">
+        <div class="detail-icon">🥂</div>
+        <h3>Reception</h3>
+        <p>The Grand Ballroom<br/>456 Riverside Drive<br/>New York, NY 10002</p>
+        <p class="detail-time">6:30 PM</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ENTOURAGE ── -->
+  <section id="entourage">
+    <p class="section-eyebrow">The Wedding Party</p>
+    <h2 class="section-title">Those Who Stand With Us</h2>
+
+    <div class="entourage-block">
+      <h3 class="entourage-role">Principal Sponsors</h3>
+      <div class="entourage-grid">
+        <div class="sponsor-pair">
+          <p class="sponsor-name">Mr. & Mrs. Robert Henderson</p>
+        </div>
+        <div class="sponsor-pair">
+          <p class="sponsor-name">Mr. & Mrs. Anthony Reyes</p>
+        </div>
+        <div class="sponsor-pair">
+          <p class="sponsor-name">Mr. & Mrs. William Torres</p>
+        </div>
+        <div class="sponsor-pair">
+          <p class="sponsor-name">Mr. & Mrs. David Castillo</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="entourage-block">
+      <h3 class="entourage-role">Secondary Sponsors</h3>
+      <div class="entourage-sub-grid">
+        <div class="sub-group">
+          <p class="sub-label">Veil</p>
+          <p>Ms. Claire Morgan & Mr. Daniel Park</p>
+        </div>
+        <div class="sub-group">
+          <p class="sub-label">Cord</p>
+          <p>Ms. Rachel Kim & Mr. Ethan Brooks</p>
+        </div>
+        <div class="sub-group">
+          <p class="sub-label">Candles</p>
+          <p>Ms. Olivia Green & Mr. Noah Carter</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="entourage-block bridal-party">
+      <div class="party-col">
+        <h3 class="entourage-role">Best Man</h3>
+        <p>Mr. Lucas Bennett</p>
+        <h3 class="entourage-role" style="margin-top:2rem;">Groomsmen</h3>
+        <p>Mr. Caleb Rivera<br/>Mr. Finn O'Brien<br/>Mr. Marcus Lee</p>
+        <h3 class="entourage-role" style="margin-top:2rem;">Ring Bearer</h3>
+        <p>Master Liam Henderson</p>
+      </div>
+      <div class="party-divider"></div>
+      <div class="party-col">
+        <h3 class="entourage-role">Maid of Honor</h3>
+        <p>Ms. Emily Watson</p>
+        <h3 class="entourage-role" style="margin-top:2rem;">Bridesmaids</h3>
+        <p>Ms. Sophia Adams<br/>Ms. Isabella Cruz<br/>Ms. Mia Thompson</p>
+        <h3 class="entourage-role" style="margin-top:2rem;">Flower Girl</h3>
+        <p>Miss Ava Henderson</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── MAP ── -->
+  <section id="map-section">
+    <p class="section-eyebrow">Find Us</p>
+    <h2 class="section-title">Venue Location</h2>
+    <div class="map-tabs">
+      <button class="map-tab active" onclick="showMap('ceremony')">Ceremony</button>
+      <button class="map-tab" onclick="showMap('reception')">Reception</button>
+    </div>
+    <div id="map-container">
+      <iframe
+        id="map-ceremony"
+        class="map-frame active-map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215580127254!2d-73.9906813!3d40.7484405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9aeb1c6b5%3A0x35b1cfbc89a6097f!2sSt.%20Patrick%27s%20Cathedral!5e0!3m2!1sen!2sus!4v1700000000000"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Ceremony Location">
+      </iframe>
+      <iframe
+        id="map-reception"
+        class="map-frame"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.982921685963!2d-74.0121698!3d40.7282376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a197c06b7cb%3A0x40a06c78f79e5de6!2sThe%20Ritz-Carlton%20New%20York%2C%20Battery%20Park!5e0!3m2!1sen!2sus!4v1700000001000"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Reception Location">
+      </iframe>
+    </div>
+    <div class="map-btns">
+      <a href="https://maps.google.com/?q=St+Patrick%27s+Cathedral+New+York" target="_blank" class="btn btn-outline" id="dir-ceremony">Get Directions (Ceremony)</a>
+      <a href="https://maps.google.com/?q=The+Ritz+Carlton+New+York+Battery+Park" target="_blank" class="btn btn-outline" id="dir-reception" style="display:none">Get Directions (Reception)</a>
+    </div>
+  </section>
+
+  <!-- ── CTA ── -->
+  <section id="cta-section">
+    <div class="cta-inner">
+      <p class="section-eyebrow">Your Presence Matters</p>
+      <h2 class="section-title light">Join Our Celebration</h2>
+      <p class="cta-note">Kindly reply by <strong>January 15, 2026</strong></p>
+      <div class="cta-buttons">
+        <a href="https://forms.google.com/your-rsvp-form-link" target="_blank" class="btn btn-primary">
+          ✉ RSVP Now
+        </a>
+        <a href="https://drive.google.com/drive/folders/your-folder-link" target="_blank" class="btn btn-secondary">
+          📷 Upload Your Photos
+        </a>
+      </div>
+      <p class="cta-sub">Share your memories from our special day</p>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <p class="footer-names">Sarah & James</p>
+    <p class="footer-date">14 · 02 · 2026</p>
+    <p class="footer-note">With love and gratitude — we can't wait to celebrate with you.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
