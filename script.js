@@ -10,8 +10,7 @@ const WEDDING_DATE = new Date('2026-06-30T16:00:00');
 // Replace these URLs with your own audio files or hosted tracks.
 const SONGS = [
   {
-    title: 'A Thousand Years',
-    url: 'https://www.image2url.com/r2/default/audio/1782450469981-f0c6de59-b6ae-4b70-ac07-c9d3cf9e75c1.mp3'
+    title: 'Beautiful in White x Canon in D', url: 'https://www.image2url.com/r2/default/audio/1782720516146-9a8abcee-766b-48e4-88e1-d8a37c5d09d3.mp3' 
   }
 ];
 
